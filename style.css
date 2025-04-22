@@ -1,0 +1,28 @@
+/* Ensure all cards have the same height */
+.card {
+    height: 350px;  /* Fixed height for all cards */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure the image covers the top part of the card */
+.card-img-top {
+    height: 150px;  /* Fixed height for the image */
+    object-fit: cover;  /* Ensures image maintains its aspect ratio */
+}
+
+/* Ensure card body fills the remaining space */
+.card-body {
+    flex-grow: 1;  /* Makes the card content take up available space */
+}
+
+/* Ensure the button stays at the same level at the bottom */
+.card-footer {
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    padding: 10px;
+}
+
+.card-footer .btn {
+    width: 100%;  /* Make button take the full width of the card */
+}
