@@ -16,68 +16,53 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
-
-        <link rel="stylesheet" href="style.css" />
+        
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <header class="bg-warning text-center p-3">
             <h1>Atlas států</h1>
             <div>
-                <select id="continent">
+                <select id="kontinent">
                     <option value="europe">Evropa</option>
-                    <option value="asia">Asie</option>
-                    <option value="africa">Afrika</option>
                     <option value="americas">Amerika</option>
+                    <option value="asia">Ásie</option>
+                    <option value="africa">Afrika</option>
                     <option value="oceania">Oceánie</option>
                 </select>
             </div>
         </header>
         <main class="container-fluid">
             <div class="row" id="countries-list">
-                <div class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                    <div class="card">
-                        <img class="card-img-top" src="czech.png" alt="Česká republika" />
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="#">Česká republika</a></h4>
-                            <p class="card-text">Hlavní město: <b>Praha</b></p>
-                        </div>
-                        <div class="card-footer">
-                            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#one-country">Informace</button>
-                        </div>
-                    </div>                                      
-                </div>                
             </div>
         </main>
         <footer class="bg-dark p-5 text-light text-center">
-            <!-- place footer here -->
-             &copy; IT2 P2 - Dominik Svoboda
+            &copy; IT2 P2 - Dominik Svoboda
         </footer>
-<!-- The Modal -->
-<div class="modal" id="one-country">
-    <div class="modal-dialog">
-      <div class="modal-content">
-  
-        <!-- Modal Header -->
-        <div class="modal-header">
-          <h4 class="modal-title">Modal Heading</h4>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-  
-        <!-- Modal body -->
-        <div class="modal-body" id="modal-body-content">
-          Modal body..
-        </div>
-  
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-        </div>
-  
-      </div>
-    </div>
-  </div>
-        
+        <div class="modal" id="oneCountry">
+            <div class="modal-dialog">
+                <div class="modal-content">
+            
+                <!-- Modal Header -->
+                <div class="modal-header bg-danger">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+            
+                <!-- Modal body -->
+                <div class="modal-body" id="oneCountry-body">
+                    Modal body..
+                </div>
+            
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            
+                </div>
+            </div>
+            </div>
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
