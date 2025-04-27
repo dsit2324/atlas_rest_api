@@ -1,7 +1,7 @@
 const countriesList = document.getElementById("countries-list");
 const continent = document.getElementById("kontinent");
 const modalBody = document.getElementById("oneCountry-body");
-const modalTitle = document.querySelector("#oneCountry .modal-title"); // <<< Přidáno: najdeme nadpis modalu
+const modalTitle = document.querySelector("#oneCountry .modal-title");
 const modal = new bootstrap.Modal(document.getElementById("oneCountry"));
 
 function loadCountries(region) {
@@ -32,7 +32,7 @@ function loadCountries(region) {
       document.querySelectorAll('button[data-name]').forEach(button => {
         button.addEventListener('click', () => {
           const countryName = button.getAttribute('data-name');
-          modalTitle.textContent = "Informace"; // <<< Přidáno: nastavíme nadpis na "Informace"
+          modalTitle.textContent = "Informace";
           modal.show();
           fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
           .then(res => res.json())
